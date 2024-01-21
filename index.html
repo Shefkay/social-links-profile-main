@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Social links profile</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preload" href="assets/fonts/Inter-VariableFont_slnt,wght.ttf" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+  <main class="card">
+    <div>
+      <img src="assets/images/_W0A95651.jpg" alt="">
+      <div class="profile_name">
+        <h1>Shefkay Dev</h1>
+        <h3>Lagos, Nigeria</h3>
+        <p>
+          "Front-end developer and avid reader."
+        </p>
+      </div>
+    </div>
+    <div>
+      <button onclick="window.location.href='https://github.com/Shefkay?tab=repositories';">
+        GitHub
+      </button>
+
+      <button onclick="window.location.href='https://www.frontendmentor.io/profile/Shefkay';">
+        Frontend Mentor
+      </button>
+
+      <button onclick="window.location.href='https://www.linkedin.com/in/sherifdeenayantoyinbo/';">
+        LinkedIn
+      </button>
+
+      <button onclick="window.location.href='https://youtube.com/@shefkay_dev';">
+        Youtube
+      </button>
+
+      <button onclick="window.location.href='#';">
+        Instagram
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://youtube.com/@shefkay_dev">Shefkay_dev</a>.
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.card').addEventListener('click',
+      function () {
+        window.location.href = 'https://youtube.com/@shefkay_dev'
+      });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+:root{
+  /* ### Primary-color */
+
+  --Green: hsl(75, 94%, 57%);
+
+  /* ### Neutral-color */
+
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+body{
+  background-color: var(--Off-Black);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 14px;
+}
+
+.card{
+  background-color: var(--Dark-Grey);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-inline: auto;
+  margin-bottom: 15px;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card div img{
+  width: 80px;
+  border-radius: 100vw;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.profile_name{
+  padding: 0 20px;
+}
+
+.card h1{
+  color: var(--White);
+  font-size: 1.5rem;
+}
+
+.card div h3{
+  color: var(--Green);
+  font-size: .8rem;
+  margin-top: .5rem;
+}
+
+.card p{
+  color: var(--White);
+  margin: 20px 0;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.card > div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  padding: 15px 0;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--Grey);
+  color: var(--White);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .15s, color .15s;
+}
+
+button:hover{
+  background-color: var(--Green);
+  color: var(--Off-Black);
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: var(--White); }
+.attribution a { color: hsl(228, 45%, 44%); }
